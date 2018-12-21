@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block body_block %}
+  <tbody>
+{% for i in stuff %}
+    <tr>
+      <td>{{ i.product }}</td>
+      <td>{{i.sub_category}}</td>
+      <td>{{i.category}}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+{% endblock %}
+
